@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Karen</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Font awesome iconos -->
     <script src="https://kit.fontawesome.com/cb4afc6d4d.js" crossorigin="anonymous"></script>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <!-- Iconos Lenguajes -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
+
 </head>
 <body>
     <!-- Navbar section -->
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="#home" id="navbar__logo">Color</a>
+            <a href="#home" id="navbar__logo">Karen Mep</a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>  
                 <span class="bar"></span>
@@ -20,93 +26,129 @@
 
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                    <a href="#inicio" class="navbar__links" id="home-page">Inicio</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#about" class="navbar__links" id="about-page">About</a>
+                    <a href="#tecnologias" class="navbar__links" id="about-page">Tecnologías</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#services" class="navbar__links" id="services-page">Services</a>
+                    <a href="#projects" class="navbar__links" id="services-page">Proyectos</a>
                 </li>
+                <li class="navbar__item">
+                    <a href="#sobre_mi" class="navbar__links" id="home-page">Sobre mi</a>
+                </li>
+
                 <li class="navbar__btn">
-                    <a href="#Sign-up" class="button" id="signup">Signup</a>
+                    <a href="#contactar" class="navbar__links" id="home-page">Contactar</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <div class="hero" id="home">
+    <!-- Seccion de inicio -->
+    <section class="hero" id="inicio">
      <div class="hero__container">
-         <h1 class="hero__heading">Choose your <span>Colorss</span></h1>
-         <p class="hero__description">Que nadie te diga que no</p>
-         <button class="main__btn"><a href="#">Explorer</a></button>
+         <h1 class="hero__heading">Hola, soy Karen Mep</h1>
+         <p class="hero__description">Backend Developer Jr</p>
+         <!-- <button class="main__btn"><a href="#">Explorer</a></button> -->
      </div> 
-    </div>
+    </section>
 
-    <!-- About section -->
-    <div class="main" id="about">
-        <div class="main__container">
-            <div class="main__img--container">
-                <div class="main__img--card"><i class="fas fa-layer-group"></i></div>
+    <!-- Seccion de Tecnologías -->
+    <section id="tecnologias" class="tecnologias">
+        <h2 class="tec-h2">Tecnologías que uso</h2>
+        <div class="tecnologias-grid">
+            <button class="btn-tec">
+                <span class="label">
+                    <i class="devicon-html5-plain-wordmark colored" id="icono"></i>
+                    <h6 class="nombre-tecnologia">Html5</h6>
+                </span>
+                <span></span>
+            </button>
+        
+            <button class="btn-tec">
+                <span class="label">
+                    <i class="devicon-css3-plain-wordmark colored" id="icono"></i>
+                    <h6 class="nombre-tecnologia">CSS</h6>
+                </span>
+                <span></span>
+            </button>
+
+            <button class="btn-tec2">
+                <span class="label">
+                    <i class="devicon-javascript-plain colored" id="icono"></i>
+                    <h6 class="nombre-tecnologia">JavaScript</h6>
+                </span>
+                <span></span>
+            </button>
+
+            <button class="btn-tec">
+                <span class="label">
+                    <i class="devicon-mysql-plain-wordmark colored" id="icono"></i>
+                    <h6 class="nombre-tecnologia">MySql</h6>
+                </span>
+                <span></span>
+            </button>
+
+            
+        </div>
+    </section>
+
+    <!-- Seccion proyectos -->
+    <section id="projects" class="projects">
+        <h2>Estos son los proyectos que hice en FreeCodeCamp</h2>
+        <div class="projects-grid">
+          <a href="https://codepen.io/karenmep/pen/MWbReMN" class="project project-tile" target="_blank">
+            <img src="https://github.com/KarenMep/TributePage/blob/main/TributePage2.PNG?raw=true">
+            <p class="project-title">
+              <span class="code"><</span>
+                Tribute Page
+                <span>/></span>
+            </p>
+          </a>
+          
+          <a href="https://codepen.io/karenmep/pen/bGBJgwY" class="project project-tile" target="_blank">
+            <img src="https://github.com/KarenMep/SurveyForm/blob/main/SurveyForm.PNG?raw=true" alt="" class="project-imge">
+            <p class="project-title">
+              <span><</span>
+                SurveyForm
+                <span>/></span>
+            </p>
+          </a>
+          
+          <a href="https://codepen.io/karenmep/details/MWJbZNL" class="project project-tile" target="_blank">
+            <img src="https://github.com/KarenMep/Technical-Document-Page/blob/main/Technical%20Document%20Page.PNG?raw=true" alt="" class="project-imge">
+            <p class="project-title">
+              <span><</span>
+                Technical Document Page
+                <span>/></span>
+            </p>
+          </a>
+        </div>
+      </section>
+
+
+    <!-- Seccion sobre mi -->
+    <section class="sobre_mi" id="sobre_mi">
+        
+            <div class="img-yo"></div>
+                <img class="imgyo" src="https://avatars.githubusercontent.com/u/75690878?s=400&u=fe5c70c8deac78931ddf6c981ac3b30ea636a251&v=4" alt="">
             </div>
+                
             <div class="main__content">
-                <h1>What do we do?</h1>
-                <h2>We help bussines</h2>
-                <p>Schedule a call to learn about servivce</p>
-                <button class="main__btn"><a href="#">Schudle cLall</a></button>
+                <h1>¿Quien soy?</h1>
+                <h2>Hola, Soy Karen. <br> Yo te puedo ayudar con la pagina web de tu negocio para que sea mas visible ante los clientes </h2>
+                <button> Contactame ahora</button>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Services Section -->
-
-    <div class="services" id="services">
-        <h1>Our Services</h1>
-        <div class="services__wrapper">
-            <div class="services__card">
-                <h2>Custom Colorways</h2>
-                <p>AI power Technolgy</p>
-                <div class="services__btn"><button>Get started</button></div>
-            </div>
-            <div class="services__card">
-                <h2>Are you ready?</h2>
-                <p>Take the lepa</p>
-                <div class="services__btn"><button>Get started</button></div>
-            </div>
-            <div class="services__card">
-                <h2>Full gradients</h2>
-                <p>100 combinations</p>
-                <div class="services__btn"><button>Get started</button></div>
-            </div>
-            <div class="services__card">
-                <h2>Inifitinte choices</h2>
-                <p>1000's of colors</p>
-                <div class="services__btn"><button>Get started</button></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Features section -->
-    <div class="main" id="sign-up">
-        <div class="main__container">
-            <div class="main__content">
-                <h1>Join our team</h1>
-                <h2>sign up today</h2>
-                <p>see what makes us different</p>
-                <button class="main__btn"><a href="#">Signup</a></button>
-            </div>
-            <div class="main__img--container">
-                <div class="main__img--card" id="card-2"><i class="fas fa-users"></i></div>
-            </div>
-        </div>
-    </div>
 
     <!-- footer section -->
 
     <div class="footer__container">
         <div class="footer__links">
-            <div class="footer__link--wrapper">
+            <!-- <div class="footer__link--wrapper">
                 <div class="footer__link--items">
                     <h2>About us</h2>
                     <a href="/sign-up">How it works</a>
@@ -119,8 +161,8 @@
                     <a href="/sign-up">Testimonios</a> <a href="/sign-up">careers</a> 
                     <a href="/sign-up">Terms of services</a>
                 </div>
-            </div>
-            <div class="footer__link-wrapper">
+            </div> -->
+            <!-- <div class="footer__link-wrapper">
                 <div class="footer__link--items">
                     <h2>About us</h2>
                     <a href="/sign-up">How it works</a>
@@ -133,33 +175,30 @@
                     <a href="/sign-up">Testimonios</a> <a href="/sign-up">careers</a> 
                     <a href="/sign-up">Terms of services</a>
                      </div>
-                </div>
+                </div> -->
             </div>
-            <section class="social_media">
+            <section id="contactar" class="social_media">
                 <div class="social__media-wrap">
                     <div class="footer__logo">
-                        <a href="/" id="footer__">Color</a>
+                        <a href="/" id="footer__">Karen Mep</a>
                     </div>
-                    <p class="website__rights">o Color 2020. all rigths reserved</p>
+                    <p class="website__rights">Karen Mep 2020. All rigths reserved</p>
                     <div class="social__icons">
-                        <a href="/" class="social__icon--link" target="_blank">
-                            <i class="fab fa-facebook"></i>
-                        </a>
 
-                        <a href="/" class="social__icon--link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-
-                        <a href="/" class="social__icon--link">
-                            <i class="fab fa-social"></i>
-                        </a>
-
-                        <a href="/" class="social__icon--link">
+                        <a href="https://www.linkedin.com/in/karen-mej%C3%ADa-paulino-a58602172/" class="social__icon--link" target="_blank">
                             <i class="fab fa-linkedin"></i>
                         </a>
 
-                        <a href="/" class="social__icon--link">
-                            <i class="fab fa-twitter"></i>
+                        <a href="https://codepen.io/karenmep" class="social__icon--link" target="_blank">
+                            <i class="fab fa-codepen"></i>
+                        </a>
+
+                        <a href="https://github.com/KarenMep" class="social__icon--link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/karen.mep.3/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-facebook"></i>
                         </a>
                     </div>
                 </div>
